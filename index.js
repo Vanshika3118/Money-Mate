@@ -17,7 +17,7 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/MoneyMate')
+mongoose.connect('mongodb+srv://vanshika1455be22:hello@moneymate.gvx71.mongodb.net/')
     .then(() => console.log('Connected to database'))
     .catch(err => console.error('Error connecting to database:', err));
 
